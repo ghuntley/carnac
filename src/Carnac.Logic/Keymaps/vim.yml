@@ -1,0 +1,41 @@
+﻿group:          VIM
+process:        
+
+shortcuts:
+
+    - name:      up
+      keys:
+      - h
+    - name:      Down
+      keys:
+      - j
+    - name:      Left
+      keys:
+      - j
+    - name:      Right
+      keys:
+      - k
+    - name:      Quit
+      keys:
+      - ESC,w,q
+    - name:      Quit (without saving changes)
+      keys:
+      - ESC,w,q,!
+    - name:      Goto end of line
+      keys:
+      - ESC,$
+    - name:      Goto end of file
+      keys:
+      - ESC,Shift,G
+    - name:      Goto line
+      TODO: How to split this out into "When it is any number, one or multiples - use case: colin+number+enter
+    - name:      Copy single line
+      keys:
+      - ESC,y
+    - name:      Copy multiple lines
+      TODO: use case: number+yy
+    - name:      Delete single line
+      keys:
+      - ESC,d,d
+    - name:      Delete multiple lines
+      TODO: use case: number+dd
