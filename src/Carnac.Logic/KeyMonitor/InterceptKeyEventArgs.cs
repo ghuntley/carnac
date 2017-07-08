@@ -5,10 +5,11 @@ namespace Carnac.Logic.KeyMonitor
 {
     public class InterceptKeyEventArgs : EventArgs
     {
-        public InterceptKeyEventArgs(Keys key, KeyDirection keyDirection, bool altPressed, bool controlPressed, bool shiftPressed)
+        public InterceptKeyEventArgs(Keys key, KeyDirection keyDirection, bool altPressed, bool escapePressed, bool controlPressed, bool shiftPressed)
         {
             AltPressed = altPressed;
             ControlPressed = controlPressed;
+            EscapePressed = escapePressed;
             Key = key;
             KeyDirection = keyDirection;
             ShiftPressed = shiftPressed;
@@ -17,6 +18,7 @@ namespace Carnac.Logic.KeyMonitor
         public bool Handled { get; set; }
         public bool AltPressed { get; private set; }
         public bool ControlPressed { get; private set; }
+        public bool EscapePressed { get; private set; }
         public bool ShiftPressed { get; private set; }
         public Keys Key { get; private set; }
         public KeyDirection KeyDirection { get; private set; }

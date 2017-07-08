@@ -132,6 +132,7 @@
     <None Include="Keymaps\resharper.yml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Keymaps\vim.yml" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

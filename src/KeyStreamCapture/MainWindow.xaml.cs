@@ -68,6 +68,7 @@ namespace KeyStreamCapture
                     new CodePropertyReferenceExpression(new CodeTypeReferenceExpression(typeof(KeyDirection)), interceptKeyEventArgse.KeyDirection.ToString()),
                     new CodePrimitiveExpression(interceptKeyEventArgse.AltPressed),
                     new CodePrimitiveExpression(interceptKeyEventArgse.ControlPressed),
+                    new CodePrimitiveExpression(interceptKeyEventArgse.EscapePressed));
                     new CodePrimitiveExpression(interceptKeyEventArgse.ShiftPressed));
 
                     var keyPress = new CodeMethodInvokeExpression(new CodeVariableReferenceExpression("keys"), "Add", key);
